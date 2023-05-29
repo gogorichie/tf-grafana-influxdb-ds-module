@@ -7,14 +7,15 @@ provider "grafana" {
 
 # Resource Block
 resource "grafana_data_source" "influxdb" {
-  provider            = var.provider
-  type                = "influxdb"
-  name                = var.ds_name
-  url                 = var.url
-  basic_auth_enabled  = var.basic_auth_enabled
-  basic_auth_username = var.basic_auth_username
-  database_name       = var.database_name
-  json_data_encoded   = var.json_data_encoded
+  provider                 = var.provider
+  type                     = "influxdb"
+  name                     = var.datasource_name
+  url                      = var.datasource_url
+  basic_auth_enabled       = var.basic_auth_enabled
+  basic_auth_username      = var.basic_auth_username
+  database_name            = var.database_name
+  json_data_encoded        = var.json_data_encoded
+  secure_json_data_encoded = var.secure_json_data_encoded
 }
 
 output "id" {

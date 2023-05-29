@@ -14,12 +14,12 @@ variable "provider" {
   default = null
 }
 
-variable "ds_name" {
+variable "datasource_name" {
   type        = string
   description = "A unique name for the data source."
 }
 
-variable "url" {
+variable "datasource_url" {
   type        = string
   description = "The URL for the data source. The type of URL required varies depending on the chosen data source type."
 }
