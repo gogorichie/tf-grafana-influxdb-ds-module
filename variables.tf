@@ -1,17 +1,17 @@
 variable "grafana_url" {
   type        = string
-  default = null
+  default     = null
   description = "The URL for the data source. The type of URL required varies depending on the chosen data source type."
 
 }
 variable "grafana_auth" {
-  type = string
+  type    = string
   default = null
 }
 
-variable "provider" {
-  type = string
-  default = null
+variable "provider_grafana_alias" {
+  type    = string
+  default = "cloud"
 }
 
 variable "datasource_name" {
@@ -38,7 +38,7 @@ variable "basic_auth_username" {
   default = null
 }
 variable "database_name" {
-  type    = string
+  type = string
 }
 
 variable "json_data_encoded" {
