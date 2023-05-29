@@ -14,10 +14,10 @@ To use this module, include it in your Terraform configuration by referencing it
 # grafana influxdb datasource module
 module "influxdb-ds-module" {
   source           = "gogorichie/influxdb-ds-module/grafana"
-  version          = "0.0.1"
+  version          = "0.0.2"
   grafana_url      = "https://grafana.example.com"
   grafana_auth     = "your-auth-token"
   ds_name          = "my-influxdb"
-
+  url                 = var.url
 }
 ```
