@@ -22,11 +22,15 @@ variable "basic_auth_enabled" {
   description = "Whether to enable basic auth for the data source"
 }
 variable "basic_auth_username" {
-  type = string
+  type    = string
+  default = null
 }
 variable "database_name" {
-  type = string
+  type    = string
+  default = null
+
 }
 
 variable "json_data_encoded" {
+  default = null
 }
