@@ -28,5 +28,5 @@ variable "database_name" {
   type = string
 }
 
-variable " json_data_encoded" {
+variable "json_data_encoded" {
 }
