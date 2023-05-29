@@ -14,3 +14,7 @@ resource "grafana_data_source" "influxdb" {
   database_name       = var.database_name
   json_data_encoded   = var.json_data_encoded
 }
+
+output "id" {
+    value = grafana_data_source.influxdb.id
+}
