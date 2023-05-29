@@ -1,10 +1,12 @@
 variable "grafana_url" {
   type        = string
+  default = null
   description = "The URL for the data source. The type of URL required varies depending on the chosen data source type."
 
 }
 variable "grafana_auth" {
   type = string
+  default = null
 }
 
 variable "ds_name" {
@@ -27,8 +29,6 @@ variable "basic_auth_username" {
 }
 variable "database_name" {
   type    = string
-  default = null
-
 }
 
 variable "json_data_encoded" {
