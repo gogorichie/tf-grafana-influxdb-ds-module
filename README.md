@@ -1,6 +1,4 @@
-# tf-grafana-influxdb-ds-module
-
-# Grafana InfluxDB Datasource
+# Grafana InfluxDB Datasource Module
 
 This Terraform module provides a convenient way to provision Grafana InfluxDB Datasources as code.
 
