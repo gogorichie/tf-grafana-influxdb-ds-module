@@ -16,5 +16,5 @@ resource "grafana_data_source" "influxdb" {
 }
 
 output "id" {
-    value = grafana_data_source.influxdb.id
+  value = grafana_data_source.influxdb.id
 }
