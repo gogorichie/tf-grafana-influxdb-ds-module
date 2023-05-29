@@ -15,8 +15,8 @@ To use this module, include it in your Terraform configuration by referencing it
 # grafana influxdb datasource module
 module "grafana_influxdb_datasource" {
 
-  source                       = "gogorichie/grafana-datasource/terraform-grafana-influxdb-ds-module"
-  version                      = "0.1.1"
+  source           = "gogorichie/grafana-datasource/terraform-grafana-influxdb-ds-module"
+  version          = "0.1.1"
   grafana_url      = "https://grafana.example.com"
   grafana_auth     = "your-auth-token"
   ds_name          = "my-influxdb"
