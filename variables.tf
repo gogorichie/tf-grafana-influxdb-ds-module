@@ -9,7 +9,7 @@ variable "grafana_auth" {
   default = null
 }
 
-variable "provider" {
+variable "grafana_provider" {
   type = string
   default = null
 }
