@@ -14,12 +14,12 @@ variable "grafana_provider" {
   default = null
 }
 
-variable "datasource_name" {
+variable "ds_name" {
   type        = string
   description = "A unique name for the data source."
 }
 
-variable "datasource_url" {
+variable "ds_url" {
   type        = string
   description = "The URL for the data source. The type of URL required varies depending on the chosen data source type."
 }
