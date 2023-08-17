@@ -1,13 +1,13 @@
 # Terraform Block
 provider "grafana" {
-  provider = var.provider
+  provider = var.grafana_provider
   url      = var.grafana_url
   auth     = var.grafana_auth
 }
 
 # Resource Block
 resource "grafana_data_source" "influxdb" {
-  provider                 = var.provider
+  provider                 = var.grafana_provider
   type                     = "influxdb"
   name                     = var.datasource_name
   url                      = var.datasource_url
